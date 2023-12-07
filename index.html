@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento Online</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+    <main>
+    <!-- Título principal -->
+    <h1>Conheça o novo Empreendimento Residencial Condomínio Club na Vila das Belezas - SP</h1>
+
+    <!-- Inclusão de imagens -->
+    <div class="imagem-container">
+        <!-- Imagem 1 -->
+        <img src="https://objectstorage.sa-saopaulo-1.oraclecloud.com/n/grq6lwb4htd1/b/tecimob-production/o/media/377caa23-04ed-420b-8fba-3026d73b17bb/properties/cf77adce-1dab-4ead-a3ce-d703da2fe4e3/images/da3fcd98-cadd-4728-b5f9-3de35c698be21698064081tkru.jpg" alt="Imagem 1">
+        
+        <!-- Parágrafo associado à imagem 1 -->
+        <p>Viva o melhor da vida em nosso condomínio Club! Desfrute de momentos ao ar livre na academia ao ar livre, relaxe no bosque, e divirta-se com as opções de lazer como churrasqueira, piscina com prainha e sala de jogos. Seu novo lar é um convite ao bem-estar! 🌳🏋️‍♂️🎉</p>
+        
+        <!-- Imagem 2 -->
+        <img src="https://objectstorage.sa-saopaulo-1.oraclecloud.com/n/grq6lwb4htd1/b/tecimob-production/o/media/377caa23-04ed-420b-8fba-3026d73b17bb/properties/cf77adce-1dab-4ead-a3ce-d703da2fe4e3/images/03bbf2d1-66b9-4120-aa7f-2797b0749f7d1698064082Yr53.jpg" alt="Imagem 2">
+        
+        <!-- Parágrafo associado à imagem 2 -->
+        <p>Sua família merece o melhor! No nosso condomínio Club, cada detalhe foi pensado para proporcionar conforto e diversão. Da brinquedoteca à quadra poliesportiva, aqui a alegria encontra seu espaço. Descubra um novo estilo de vida! 🏡🤸‍♂️🎈</p>
+        
+        <!-- ... (repetir o padrão para as outras imagens e parágrafos) ... -->
+    </div>
+
+    <!-- Título após as imagens -->
+    <h1>Devido ao costume de ofertas da Black Friday, resolvemos manter os preços de lançamento. Aproveite!</h1>
+
+    <!-- Contêiner de vídeo -->
+    <div class="video-container">
+        <!-- Vídeo 1 -->
+        <video width="640" controls autoplay preload="auto" loop>
+            <source src="video01.mp4" type="video/mp4">
+        </video>
+        <!-- Título associado ao vídeo 1 -->
+        <h1>Agora você pode solicitar diretamente no campo de mensagens uma simulação de financiamento, de entrada e de parcelas!</h1>
+        
+        <!-- Vídeo 2 -->
+        <video width="640" autoplay preload="auto" muted loop>
+            <source src="video02.mp4" type="video/mp4">
+        </video>
+        <!-- Título associado ao vídeo 2 -->
+        <h1>Solicite abaixo o ebook de apresentação completo e a tabela de preços dos apartamentos:</h1>
+    </div>
+
+    <!-- Formulário de contato -->
+    <form action="https://formspree.io/f/xvojywna" method="POST">
+        <!-- Campos do formulário (nome, e-mail, contato, mensagem) -->
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="name" class="input-padrao" autocomplete="name" required placeholder="Insira seu nome aqui">
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" class="input-padrao" autocomplete="email" required placeholder="Insira seu email aqui">
+
+        <label for="contato">Contato WhatsApp:</label>
+        <input type="tel" id="contato" name="contato" class="input-padrao" autocomplete="cc-number" required placeholder="(xx) xxxxx-xxxx">
+
+        <label for="mensagem">Se você procura alguma informação específica, aproveite o campo abaixo para enviar sua mensagem:</label>
+        <textarea cols="20" rows="5" id="mensagem" name="mensagem" class="input-padrao"></textarea>
+
+        <!-- Rodapé do formulário -->
+        <footer>
+            <legend>Gostaria de receber nosso contato para um atendimento personalizado?</legend>
+            <select id="visita" name="visita">
+                <option value="nao">Não</option>
+                <option value="sim">Sim</option>
+            </select>
+            <!-- Campos de seleção de data e horário (inicialmente ocultos) -->
+            <div id="data-horario-fields" style="display: none;">
+                <label for="data">Selecione a data:</label>
+                <input type="date" id="data" name="data">
+
+                <label for="horario">Selecione o horário:</label>
+                <input type="time" id="horario" name="horario">
+            </div>
+        </footer>
+
+        <!-- Botão de envio do formulário -->
+        <input type="submit" value="RECEBER EBOOK, SIMULAÇÃO E INFORMAÇÕES. AQUI!" class="enviar" style="margin-top: 10px;">
+    </form>
+
+    <!-- Rodapé com informações de copyright -->
+    <div id="copiry">
+        <img src="logo.png" alt="Logo." width="100">
+        <br id="copiry" copyright">&copy; Copyright DEIVISON - 2023</br>
+    </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
